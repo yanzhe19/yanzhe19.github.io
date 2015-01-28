@@ -1,0 +1,6 @@
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\bin\COMP_308_Assignment1.dll.config
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\bin\COMP_308_Assignment1.dll
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\bin\COMP_308_Assignment1.pdb
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\obj\Debug\COMP_308_Assignment1.dll
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\obj\Debug\COMP_308_Assignment1.pdb
+C:\Users\zhe\Desktop\COMP_308_Assignment1\COMP_308_Assignment1\obj\Debug\COMP_308_Assignment1.csprojResolveAssemblyReference.cache

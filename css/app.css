@@ -1,0 +1,235 @@
+﻿/*page background style*/
+body {
+    /*background-color:black;*/
+    background-size: auto auto;
+    background-image: url("../assets/img/background.jpg");
+}
+
+/*page wrapper's style*/
+#wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    background-color: azure;
+    opacity: 0.9;
+}
+
+/*project page contact me button color*/
+#pojectPageContactBtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+
+/*navigation bar style*/
+#navBarRegular {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2vmin;
+    text-align: center;
+    vertical-align: top;
+    background-color: #b0b0b0;
+}
+
+/*small navigation bar style*/
+#navBar {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2vmin;
+    text-align: center;
+    vertical-align: top;
+    background-color: #b0b0b0;
+}
+
+/* Headline Text Style*/
+#heading_supersize {
+    font-size: 12.5vmin;
+    text-align: center;
+    font-weight: bold;
+    line-height: 15.5vmin;
+    margin: 0 0 10px;
+    color: #212121;
+}
+
+/* tagline Text Style*/
+#tagline_text {
+    /*font-size: 6vmin;*/
+    margin-bottom: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/*paragraph style*/
+p, #missionState {
+    color: #333;
+}
+
+/*+++++++++++++++++++++index page Call to Action button style++++++++++++++++++++++++++*/
+#btnCallToAction {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 5%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+    #btnCallToAction:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -17px;
+        border-style: solid;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+    }
+
+    #btnCallToAction > a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        font: bold 18px/40px Sans-Serif;
+    }
+/*+++++++++++++++++++++++End of Call To Action button style+++++++++++++++++++++++++++*/
+
+
+/*Index page, checked navigation icon style*/
+#checkedNavIcon {
+    background-color: #949191;
+}
+
+/*index page,Keep connected text style*/
+#keepConnectTxt {
+    text-align: center;
+}
+
+
+/*+++++++++++++++++++++++++++++social media icon section++++++++++++++++++++++++++++++++*/
+/*index page, Social Media Button style*/
+#socialSection {
+    margin-top: 3%;
+}
+
+.webicon {
+    display: inline-block;
+    background-size: 100%;
+    width: 48px;
+    height: 48px;
+    text-indent: -999em;
+    text-align: left;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+}
+
+    .webicon:hover {
+        margin: -1px 0 1px;
+        -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .webicon.small {
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .webicon.large {
+        width: 48px;
+        height: 48px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+
+/* restore webicons accessibility for print */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .webicon {
+        text-indent: 0;
+        width: auto !important;
+        height: auto !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+
+.webicon.youtube {
+    background: url("../assets/img/icon/webicon-youtube.png");
+}
+
+.webicon.facebook {
+    background: url("../assets/img/icon/webicon-facebook.png");
+}
+
+.webicon.linkedin {
+    background: url("../assets/img/icon/webicon-linkedin.png");
+}
+
+.webicon.twitter {
+    background: url("../assets/img/icon/webicon-twitter.png");
+}
+/*+++++++++++++++++++++++++++++END of social media icon section++++++++++++++++++++++++++++++++*/
+
+/*/*About me page picture style
+#recentPic {
+  border-right:solid rgba(217, 209, 209, 0.42);
+}*/
+
+/*About me content wrapper style*/
+#aboutMeWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%    
+}
+
+/*About me page, hr line style*/
+.hrStyle {
+    width: 90%;
+}
+
+/*About me page paragraph alignstyle*/
+.paragraphAlign {
+    padding-top:0;
+    margin:0;
+}
+
+/*Project page image style*/
+.imageGrid{
+   margin-bottom: 5%;
+}
+
+/*Contact me content wrapper style*/
+#contactMeWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding:3%;
+    border:solid rgba(0, 0, 0, 0.25); 
+}
