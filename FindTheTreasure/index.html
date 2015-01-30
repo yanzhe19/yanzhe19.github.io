@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--Source  file  name: index.html,
+    Author's name: Zhe Yan ,
+    Last  Modified  by: Zhe Yan ,
+    Date  last  Modified: 2015_01_29 ,
+    Program  description：This is the first assignment of COMP397  –  Web  Game  Programming。 It is a simple selection game which aske
+        player find the treasure in this area. There are 8 outcomes in total and only one is positive outcome.
+    File Description: This file is main html file of this game.
+    Revision  History: version 2.0 -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Treasure!</title>
+
+    <!--CSS Section-->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="impress">
+
+        <!--This is the introducation slide. User should selecct either forest or mountain-->
+        <div id="intro" class="step slide">
+            <div class="slide-text">
+                <p>There is a bag of tresure in this area.</p>
+                <p>You can go to either the forest in front of you or the faraway mountain to find the treasure.</p>
+                <br />
+                <p>Which way do you want?</p>
+                <p><a href="#forestRoot">Forest</a> Dark and thick forest</p>
+                <p>or</p>
+                <p><a href="#mountainRoot">Mountain</a> High and dangerous mountain</p>
+            </div>
+        </div>
+
+        <!--+++++++++++++++++++++++++First page after forest selected. usesr should select around the forest or into the forest++++++++++++++++-->
+        <div id="forestRoot" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You approach the forest, it is dark and thick.</p>
+                <p>Do you want to walk inside the forest? Maybe you can find the treasure in the forest!</p>
+                <p><a href="#aroundForest">No</a> just find treasure around the forest</p>
+                <br />
+                <p><a href="#intoForest">Yes</a> I want to walk into the center of forest</p>
+            </div>
+        </div>
+
+        <!--slide after select stay around the forest, user can select tree holes or bird's nest-->
+        <div id="aroundForest" class="step slide" data-x="2200" data-y="500">
+            <div class="slide-text">
+                <p>Both tree holes and bird's nest might have the treasure.</p>
+                <p>Select one!</p>
+                <p><a href="#forestTreeHole">Have a look of the tree holes</a></p>
+                <br />
+                <p><a href="#forestBirdNest">Check the bird's nest</a></p>
+            </div>
+        </div>
+
+        <!--slide after select walk into the forest, user can select dig the ground or jump to creek-->
+        <div id="intoForest" class="step slide" data-x="6200" data-scale='3'>
+            <div class="slide-text">
+                <p>The ground and creek look like suspicious.</p>
+                <p>Which way do you want to go?</p>
+                <p><a href="#forestDigGround">Dig the ground for treasure</a></p>
+                <br />
+                <p><a href="#forestCreek">Jump into the creek for treasure</a></p>
+            </div>
+        </div>
+
+        <!--Slide after select go to tree hole, First bad result-->
+        <div id="forestTreeHole" class="step slide" data-x="2200" data-y="-500">
+            <div class="slide-text">
+                <p>Too bad!</p>
+                <p>Treasure is not here.</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select go to bird's nest, Second bad result-->
+        <div id="forestBirdNest" class="step slide" data-x="3200" data-rotate="150">
+            <div class="slide-text">
+                <p>Too bad!</p>
+                <p>Bird don't have any treasure.</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select dig the ground, The only good result-->
+        <div id="forestDigGround" class="step slide" data-x="4200" data-y='1500' data-z='1500'>
+            <div class="slide-text" id="onlyWinResult">
+                <p>Congratulation! You find the treasure. You win the game!</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select jump to creek, The Third bad result-->
+        <div id="forestCreek" class="step slide" data-x="4900" data-y='1500' data-z='100'>
+            <div class="slide-text">
+                <p>Fail, nothing here~</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--+++++++++++++++++++++++++First page after mountain selected. usesr should select either altar or cave of the mountain++++++++++++++++-->
+        <div id="mountainRoot" class="step slide" data-x="-5600" data-y='1500' data-z='-1500'>
+            <div class="slide-text">
+                <p>You arrive the faraway mountain, it is very hign and dangerous.</p>
+                <p>There are a altar in the mountain peak, and a cave in the middle of mountain.</p>
+                <p>Which one you choose to go?</p>
+                <p><a href="#mountainAltar">Altar</a> go to the altar in the mountain peak.</p>
+                <br />
+                <p><a href="#mountainCave">Cave</a> go to cave in the middle of mountain. </p>
+            </div>
+        </div>
+
+        <!--slide after select altar, user can select open the door or go to center of altar-->
+        <div id="mountainAltar" class="step slide" data-x="-6600" data-y='3000' data-scale='10'>
+            <div class="slide-text">
+                <p>You can go the hallway or center of Altar.</p>
+                <p>Whcih way do you want?</p>
+                <p><a href="#mountainHallWay">Open the door of hall way</a></p>
+                <br />
+                <p><a href="#mountainCenterAltar">Go to the center of altar</a></p>
+            </div>
+        </div>
+
+        <!--slide after select cave, user can select dark cave or bright cave-->
+        <div id="mountainCave" class="step slide" data-x="-7000" data-y="500">
+            <div class="slide-text">
+                <p>Whcih cave do you want to go?</p>
+                <p><a href="#mountainDarkCave">Dark Cave</a> Go to the dark and humid cave</p>
+                <br />
+                <p><a href="#mountainBrightCave">Bright Cave</a> Go to the bright and warm cave</p>
+            </div>
+        </div>
+
+        <!--slide after select go to hall way of Altar, Fourth bad result-->
+        <div id="mountainHallWay" class="step slide" data-x="-5200" data-y="500" data-scale='3'>
+            <div class="slide-text">
+                <p>No treasure, and you can not exit. You died</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select go to center of Altar,Fifth bad result-->
+        <div id="mountainCenterAltar" class="step slide" data-x="-2200" data-y="-1000">
+            <div class="slide-text">
+                <p>Too bad!</p>
+                <p>No treasure over here.</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select go to dark cave, Sixth bad result-->
+        <div id="mountainDarkCave" class="step slide" data-x="-2800" data-rotate="150">
+            <div class="slide-text">
+                <p>Too bad!</p>
+                <p>Nothing over here.</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide after select bright cave, Seventh bad result-->
+        <div id="mountainBrightCave" class="step slide" data-x="-4200" data-y='1500' data-z='150'>
+            <div class="slide-text">
+                <p>Oh!</p>
+                <p>You died, there is a monster, no treasure.</p>
+                <div class="menu">
+                    <a href="#intro">START OVER</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="js/impress.js"></script>
+    <script src="js/game.js"></script>
+    <script>impress().init();</script>
+
+</body>
+</html>

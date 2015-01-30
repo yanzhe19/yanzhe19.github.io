@@ -1,0 +1,6 @@
+G:\Github\theDragon\theDragon\bin\theDragon.dll.config
+G:\Github\theDragon\theDragon\bin\theDragon.dll
+G:\Github\theDragon\theDragon\bin\theDragon.pdb
+G:\Github\theDragon\theDragon\obj\Debug\Assignment1.csprojResolveAssemblyReference.cache
+G:\Github\theDragon\theDragon\obj\Debug\theDragon.dll
+G:\Github\theDragon\theDragon\obj\Debug\theDragon.pdb
