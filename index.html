@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--File  name: index.html,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the home page of my potfolio site, it shows my tagline, mission and featured work-->
+<!--File  name: index,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's Potfilio,  file  description: this file is the home page of my potfolio site, it shows my tagline, mission and featured work-->
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -22,54 +22,25 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="row">
-            <!--Put the logo in the center-->
-            <div class="twelve columns text-center">
-                <br />
-                <img src="http://placehold.it/285x79/" alt="place holder for Logo" />
-            </div>
-        </div>
-
         <!--The Navigation bar(Full version) in medium and large screen-->
-        <div class="row hide-for-small" medium-collapse large-uncollapse>
-            <div id="navBarRegular" class="icon-bar six-up">
+        <div class="row navClass hide-for-small medium-uncollapse large-uncollapse columns">
+            <!--Logo-->
+            <div class="large-2 medium-2 columns" id="logo">
+                <img src="assets/img/logo.png" alt="" />
+            </div>
+
+            <!--Navigation full size-->
+            <div class="icon-bar six-up large-10 medium-10 columns end" id="navBarRegular">
                 <a class="item hide-for-small" href="index.html" id="checkedNavIcon">
                     <img src="assets/img/icon/home.svg" alt="" />
                     <label>Home</label>
                 </a>
                 <a class="item" href="aboutMe.html">
                     <img src="assets/img/icon/me.svg" alt="" />
-                    <label class="hide-for-small">
+                    <label class="show-for-large-up">
                         About Me
                     </label>
-                </a>
-                <a class="item" href="projects.html">
-                    <img src="assets/img/icon/project.svg" alt="" />
-                    <label>Projects</label>
-                </a>
-                <a class="item" href="service.html">
-                    <img src="assets/img/icon/service.svg" alt="" />
-                    <label>Service</label>
-                </a>
-                <a class="item" href="contactMe.html">
-                    <img src="assets/img/icon/contact.svg" alt="" />
-                    <label class="hide-for-small">
-                        Contact Me
-                    </label>
-                </a>
-                <a class="item hide-for-small" href="https://github.com/yanzhe19">
-                    <img src="assets/img/icon/github.svg" alt="" />
-                    <label>Github</label>
-                </a>
-            </div>
-        </div>
-
-        <!--Navigation bar for small screen only, Replace the full navigation-->
-        <div class="row show-for-small-only">
-            <div id="navBar" class="icon-bar four-up">
-                <a class="item" href="aboutMe.html">
-                    <img src="assets/img/icon/me.svg" alt=""/>
-                    <label class="show-for-small">
+                    <label class="show-for-medium-only">
                         About
                     </label>
                 </a>
@@ -83,9 +54,37 @@
                 </a>
                 <a class="item" href="contactMe.html">
                     <img src="assets/img/icon/contact.svg" alt="" />
-                    <label class="show-for-small">
+                    <label class="show-for-large-up">
+                        Contact Me
+                    </label>
+                    <label class="show-for-medium-only">
                         Contact
                     </label>
+                </a>
+                <a class="item hide-for-small" href="https://github.com/yanzhe19">
+                    <img src="assets/img/icon/github.svg" alt="" />
+                    <label>Github</label>
+                </a>
+            </div>
+        </div>
+
+        <!--Navigation bar for small screen only, Replace the full navigation-->
+        <div class="navClass row show-for-small-only small-collapse">
+            <div class="small-only-text-center" id="logo">
+                <img src="assets/img/logo.png" alt="" />
+            </div>
+            <div id="navBar" class="icon-bar four-up">
+                <a class="item" href="aboutMe.html">
+                    <img class="smallIcon" src="assets/img/icon/me.svg" alt=""/>
+                </a>
+                <a class="item" href="projects.html">
+                    <img class="smallIcon" src="assets/img/icon/project.svg" alt="" />
+                </a>
+                <a class="item" href="service.html">
+                    <img class="smallIcon" src="assets/img/icon/service.svg" alt="" />
+                </a>
+                <a class="item" href="contactMe.html">
+                    <img class="smallIcon" src="assets/img/icon/contact.svg" alt="" />
                 </a>
             </div>
         </div>
@@ -93,10 +92,7 @@
         <!--breadcrumbs for home page-->
         <div class="row">
             <ul class="breadcrumbs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li class="unavailable"><a href="#">Gene Splicing</a></li>
-                <li class="current"><a href="#">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
             </ul>
         </div>
 
@@ -123,20 +119,23 @@
             </ul>
         </div>
 
+        <!--Call to action button and slider section-->
         <div class="row text-center">
             <hr />
             <!-- Call  to  Action  Button-->
-            <div id="btnCallToAction" class="large-2 columns hide-for-mediumn hide-for-small"><a href="projects.html">More Work</a></div>
+            <div id="btnCallToAction" class="large-2 columns show-for-large-up"><a href="projects.html">More Work</a></div>
             <!--Start slider Section-->
-            <div id="wowslider-container1" class="large-10 columns ">
+
+            <!--Double click to open the link with specific image-->
+            <div id="wowslider-container1" class="large-10 small-centered columns">
                 <div class="ws_images">
                     <ul>
-                        <li><a href="projects.html#project1" target="_blank"><img src="assets/data1/images/1.jpg" alt="1" title="1" id="wows1_0" /></a>HelpDesk Application</li>
-                        <li><a href="projects.html#project1" target="_blank"><img src="assets/data1/images/2.jpg" alt="2" title="2" id="wows1_1" /></a>Helpdesk Application</li>
-                        <li><a href="projects.html#project2" target="_blank"><img src="assets/data1/images/3.png" alt="3" title="3" id="wows1_2" /></a>Health Track Android app</li>
-                        <li><a href="projects.html#project2" target="_blank"><img src="assets/data1/images/4.png" alt="4" title="4" id="wows1_3" /></a>Health Track Android app</li>
-                        <li><a href="projects.html#project3" target="_blank"><img src="assets/data1/images/5.jpg" alt="5" title="5" id="wows1_4" /></a>Inventory System</li>
-                        <li><a href="projects.html#project3" target="_blank"><img src="assets/data1/images/6.jpg" alt="6" title="6" id="wows1_5" /></a>Inventory System</li>
+                        <li><a href="helpDeskProject.html"><img src="assets/data1/images/1.jpg" alt="1" title="1" id="wows1_0" /></a>HelpDesk Application</li>
+                        <li><a href="helpDeskProject.html"><img src="assets/data1/images/2.jpg" alt="2" title="2" id="wows1_1" /></a>Helpdesk Application</li>
+                        <li><a href="healthTrackingAndroidProject.html"><img src="assets/data1/images/3.png" alt="3" title="3" id="wows1_2" /></a>Health Track Android app</li>
+                        <li><a href="healthTrackingAndroidProject.html"><img src="assets/data1/images/4.png" alt="4" title="4" id="wows1_3" /></a>Health Track Android app</li>
+                        <li><a href="InventorySystemProject.html"><img src="assets/data1/images/5.jpg" alt="5" title="5" id="wows1_4" /></a>Inventory System</li>
+                        <li><a href="InventorySystemProject.html"><img src="assets/data1/images/6.jpg" alt="6" title="6" id="wows1_5" /></a>Inventory System</li>
                     </ul>
                 </div>
                 <div class="ws_bullets">
@@ -149,13 +148,14 @@
                         <a href="#" title="6"><img src="assets/data1/tooltips/6.jpg" alt="6" />6</a>
                     </div>
                 </div><span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.4</span>
-                <div class="ws_shadow"></div>
+                <!--<div class="ws_shadow"></div>-->
             </div>
             <script type="text/javascript" src="engine1/wowslider.js"></script>
             <script type="text/javascript" src="engine1/script.js"></script>
             <!-- End Slider section -->
         </div>
 
+        <!--Social network button section-->
         <div class="row hide-for-small">
             <hr/>
             <!--<div class="row large-8 large-offset-4 columns text-center" id="socialSection">-->
@@ -170,10 +170,10 @@
             </div>
         </div>
 
-        <!--Footer-->
+        <!--Footer, copyright statement-->
         <div class="footer-bottom">
             <div class="row text-center">
-                <a href="#">Sitemap</a>
+                <a href="termsOfUse.html">Terms of use</a>
                 <p class="copyright">© 2015 Zhe Yan. All rights reserved.</p>
             </div>
         </div>

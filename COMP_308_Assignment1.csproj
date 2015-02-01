@@ -81,7 +81,7 @@
     <Content Include="assets\img\icon\project.svg" />
     <Content Include="assets\img\icon\service.svg" />
     <Content Include="assets\img\icon\webicon-youtube.png" />
-    <Content Include="assets\img\logo_1.png" />
+    <Content Include="assets\img\Logo.png" />
     <Content Include="assets\img\zhe_profile photo.jpg" />
     <Content Include="contactMe.html" />
     <Content Include="css\app.css" />
@@ -111,6 +111,9 @@
     <Content Include="engine1\triangle.png" />
     <Content Include="engine1\wowslider.js" />
     <Content Include="engine1\wowslider.mod.js" />
+    <Content Include="healthTrackingAndroidProject.html" />
+    <Content Include="InventorySystemProject.html" />
+    <Content Include="helpDeskProject.html" />
     <Content Include="humans.txt" />
     <Content Include="index.html" />
     <Content Include="projects.html" />
@@ -120,6 +123,7 @@
     <Content Include="Scripts\lib\jquery.js" />
     <None Include="Scripts\_references.js" />
     <Content Include="service.html" />
+    <Content Include="termsOfUse.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<!--File  name: contactMe.html,  Author's  name: Zhe Yan (300706310),  web  site  name: Contact Me,  file  description: this file show the contact me form and user can send me email through this form-->
+<!--File  name: contactMe,  Author's  name: Zhe Yan (300706310),  web  site  name: Zhe's potfolio,  file  description: this file show the contact me form and my basic contact info. User can send me email through this form-->
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="this file show the contact me form and user can send me email through this form." />
+    <meta name="description" content="this file show the contact me form and my basic contact info. User can send me email through this form." />
     <meta name="author" content="Zhe Yan, Student Number:300706310" />
     <meta name="copyright" content="Zhe Yan. Copyright (c) 2015" />
     <title>Contact Me</title>
@@ -15,54 +15,25 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="row">
-            <!--Put the logo in the center-->
-            <div class="twelve columns text-center">
-                <br />
-                <img src="http://placehold.it/285x79/" alt="place holder for Logo" />
-            </div>
-        </div>
-
         <!--The Navigation bar(Full version) in medium and large screen-->
-        <div class="row hide-for-small" medium-collapse large-uncollapse>
-            <div id="navBarRegular" class="icon-bar six-up">
+        <div class="row navClass hide-for-small medium-uncollapse large-uncollapse columns">
+            <!--Logo-->
+            <div class="large-2 medium-2 columns" id="logo">
+                <img src="assets/img/logo.png" alt="" />
+            </div>
+
+            <!--Navigation full size-->
+            <div class="icon-bar six-up large-10 medium-10 columns end" id="navBarRegular">
                 <a class="item hide-for-small" href="index.html">
                     <img src="assets/img/icon/home.svg" alt="" />
                     <label>Home</label>
                 </a>
                 <a class="item" href="aboutMe.html">
                     <img src="assets/img/icon/me.svg" alt="" />
-                    <label class="hide-for-small">
+                    <label class="show-for-large-up">
                         About Me
                     </label>
-                </a>
-                <a class="item" href="projects.html">
-                    <img src="assets/img/icon/project.svg" alt="" />
-                    <label>Projects</label>
-                </a>
-                <a class="item" href="service.html">
-                    <img src="assets/img/icon/service.svg" alt="" />
-                    <label>Service</label>
-                </a>
-                <a class="item" href="contactMe.html" id="checkedNavIcon">
-                    <img src="assets/img/icon/contact.svg" alt="" />
-                    <label class="hide-for-small">
-                        Contact Me
-                    </label>
-                </a>
-                <a class="item hide-for-small" href="https://github.com/yanzhe19">
-                    <img src="assets/img/icon/github.svg" alt="" />
-                    <label>Github</label>
-                </a>
-            </div>
-        </div>
-
-        <!--Navigation bar for small screen only, Replace the full navigation-->
-        <div class="row show-for-small-only">
-            <div id="navBar" class="icon-bar four-up">
-                <a class="item" href="aboutMe.html">
-                    <img src="assets/img/icon/me.svg" alt="" />
-                    <label class="show-for-small">
+                    <label class="show-for-medium-only">
                         About
                     </label>
                 </a>
@@ -76,9 +47,38 @@
                 </a>
                 <a class="item" href="contactMe.html" id="checkedNavIcon">
                     <img src="assets/img/icon/contact.svg" alt="" />
-                    <label class="show-for-small">
+                    <label class="show-for-large-up">
+                        Contact Me
+                    </label>
+                    <label class="show-for-medium-only">
                         Contact
                     </label>
+                </a>
+                <a class="item hide-for-small" href="https://github.com/yanzhe19">
+                    <img src="assets/img/icon/github.svg" alt="" />
+                    <label>Github</label>
+                </a>
+            </div>
+        </div>
+
+        <!--Navigation bar for small screen only, Replace the full navigation-->
+        <div class="navClass row show-for-small-only small-collapse">
+            <div class="small-only-text-center" id="logo">
+                <img src="assets/img/logo.png" alt="" />
+            </div>
+
+            <div id="navBar" class="icon-bar four-up">
+                <a class="item" href="aboutMe.html">
+                    <img class="smallIcon" src="assets/img/icon/me.svg" alt="" />
+                </a>
+                <a class="item" href="projects.html">
+                    <img class="smallIcon" src="assets/img/icon/project.svg" alt="" />
+                </a>
+                <a class="item" href="service.html">
+                    <img class="smallIcon" src="assets/img/icon/service.svg" alt="" />
+                </a>
+                <a class="item" href="contactMe.html" id="checkedNavIcon">
+                    <img class="smallIcon" src="assets/img/icon/contact.svg" alt="" />
                 </a>
             </div>
         </div>
@@ -103,37 +103,73 @@
         <!--Contact me form-->
         <div class="row" id="contactMeWrapper">
             <section class="section">
-                <h5 class="title"><a href="#panel1">Contact Me</a></h5>
                 <div class="content" data-slug="panel1">
                     <form>
-                        <div class="row collapse">
-                            <div class="large-1 columns">
-                                <label class="inline">Name: </label>
+                        <fieldset>
+                            <legend>Contact Me</legend>
+
+                            <div class="row collapse">
+                                <div class="large-1 columns">
+                                    <label class="inline">Name: </label>
+                                </div>
+                                <div class="large-11 columns">
+                                    <input type="text" id="yourName" placeholder="Please put your name over here">
+                                </div>
                             </div>
-                            <div class="large-11 columns">
-                                <input type="text" id="yourName" placeholder="Daniel Smith">
+                            <div class="row collapse">
+                                <div class="large-1 columns">
+                                    <label class="inline">Email: </label>
+                                </div>
+                                <div class="large-11 columns">
+                                    <input type="text" id="yourEmail" placeholder="Your email address">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row collapse">
-                            <div class="large-1 columns">
-                                <label class="inline">Email: </label>
-                            </div>
-                            <div class="large-11 columns">
-                                <input type="text" id="yourEmail" placeholder="dSmith@gmail.com">
-                            </div>
-                        </div>
-                        <label>Message:</label>
-                        <textarea rows="4"></textarea>
-                        <button type="submit" class="radius button">Submit</button>
+                            <label>Message:</label>
+                            <textarea rows="4" placeholder="Anything you want to say?"></textarea>
+                            <button type="submit" class="radius button" id="contactSubmitBtn">Submit</button>
+                        </fieldset>
                     </form>
                 </div>
             </section>
         </div>
 
-        <!--Footer-->
+        <hr />
+        <!--contact information title-->
+        <div class="row" id="aboutMeWrapper">
+            <h1 id="tagline_text" class="subheader">Contact Info</h1>
+            <br />
+            <div class="twelve columns ">
+                <p>Want to contact me directly?</p>
+            </div>
+        </div>
+
+        <!--my contact info-->
+        <div class="row" id="contactInfo">
+            <div class="panel">
+                <p><strong>Email: </strong><a href="mailto:yanzhe19@gmail.com">yanzhe19@gmail.com</a></p>
+                <p><strong>Working address: </strong>941 Progress Ave, Scarborough, Ontario, Canada</p>
+                <p><strong>Contact number: </strong>647-769-6181</p>
+            </div>
+        </div>
+
+        <!--Social network section-->
+        <hr />
+        <div class="row" id="connectSocial">
+            <div class="panel" id="socialSection">
+                <h5 id="keepConnectTxt">Connected with me on social media!</h5>
+                <div class="row text-center">
+                    <a class="webicon linkedin" href="http://ca.linkedin.com/in/ZheYan">LinkedIn</a>
+                    <a class="webicon facebook" href="https://www.facebook.com/daniel.yan.79827">Facebook</a>
+                    <a class="webicon youtube " href="https://www.youtube.com/channel/UCI2dR0rLodmXwa00mqjb2pg/feed?view_as=public">youtube</a>
+                    <a class="webicon twitter" href="https://twitter.com/daniel_yan19">twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer, copyright statement-->
         <div class="footer-bottom">
             <div class="row text-center">
-                <a href="#">Sitemap</a>
+                <a href="termsOfUse.html">Terms of use</a>
                 <p class="copyright">© 2015 Zhe Yan. All rights reserved.</p>
             </div>
         </div>
