@@ -1,0 +1,313 @@
+﻿/*  File  name: mobile.css,  Author's  name: Zhe Yan (300706310),
+    web  site  name: Zhe's portfolio mobile version, 
+    file  description: this is the css file of mobile portfolio site*/
+
+.container > .infoBoxList > .shareInfoBox {
+    display: none !important;
+}
+
+/*page wrapper style*/
+#wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    /*padding:0;
+    height: 99%;*/
+    background-color: azure;
+    opacity: 0.9;
+    /*border:dashed black;*/
+}
+
+/*page style*/
+.ui-page {
+    /*-khtml-opacity: .50;
+    -moz-opacity: .50;
+    -ms-filter: "alpha(opacity=50)";
+    filter: alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);*/
+    opacity: .85;
+    background-image: url('../Content/images/background.jpg');
+    background-size: cover;
+    /*border:dashed black;*/
+}
+
+/*+++++++++++++++++++++++++++++++++Nav Section++++++++++++++++++++++++++++++++++++++++++++*/
+/*icon navigation style*/
+.nav-glyphish-example .ui-btn {
+    padding-top: 40px !important;
+}
+
+    .nav-glyphish-example .ui-btn:after {
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: -15px !important;
+        box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+
+/*about icon*/
+#aboutIcon:after {
+    background: url('../Content/images/nav-icons/me.png') 50% 50% no-repeat;
+    background-size: contain;
+}
+
+/*contact icon*/
+#contact:after {
+    background: url('../Content/images/nav-icons/contact.png') 50% 50% no-repeat;
+    background-size: contain;
+}
+
+/*navigation bar ul style*/
+#navContainerUL {
+    vertical-align: bottom;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 20%;
+    /*border:dashed black;*/
+}
+
+/*navigation bar li style*/
+.navList {
+    position: relative;
+    width: 100px;
+    height: 80px;
+}
+
+/*navigation bar li span and logo style*/
+li span {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    /*border:dashed black;*/
+}
+
+/*logo style*/
+#Logo {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-height: 80px;
+    border: dashed;
+}
+
+/*project image button style*/
+#projectButton, #serviceButton {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    /*border: dashed black;*/
+}
+
+#projectBtnA, #serviceBtnA {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    /*border: dashed black;*/
+}
+
+#projectBlock, #serviceBlock {
+    text-align: center;
+    /*border: dashed black;*/
+}
+
+/*image button class style*/
+.imgButton {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: dashed black;
+}
+/*+++++++++++++++++++++++++++++++++End of Nav Section++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++Header text style++++++++++++++++++++++++++++++++++++++++*/
+/*welcome statement style*/
+#heading_supersize {
+    font-size: 12.5vmin;
+    text-align: center;
+    font-weight: bold;
+    line-height: 15.5vmin;
+    margin: 0 0 10px;
+    color: #212121;
+}
+
+/*home page welcome statment style*/
+#welcomeHome {
+    font-size: 6vmin;
+    text-align: center;
+    margin-bottom: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: 'Handlee', cursive;
+    font-style: italic;
+}
+
+/* subheader Style*/
+#subheader {
+    font-size: 6vmin;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+/*Tagline style*/
+#tagline_text {
+    font-size: 5vmin;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: 'Handlee', cursive;
+    /*font-style: italic;*/
+}
+
+/*about me page mission style*/
+#missionState {
+    list-style-type: disc;
+    font-size: medium;
+}
+/*+++++++++++++++++++++++++++++++++End Header text style++++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++Social network icon section++++++++++++++++++++++++++++++++++++++*/
+/*Social network icon*/
+.ui-icon-myLinkedin:after {
+    background-image: url('../assets/img/icon/webicon-linkedin-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    /* resize the icon*/
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
+}
+
+.ui-icon-myFacebook:after {
+    background-image: url('../assets/img/icon/webicon-facebook-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    /* resize the icon*/
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
+}
+
+.ui-icon-myYoutube:after {
+    background-image: url('../assets/img/icon/webicon-youtube-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    /* resize the icon*/
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
+}
+
+.ui-icon-myTwitter:after {
+    background-image: url('../assets/img/icon/webicon-twitter-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    /* resize the icon*/
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
+}
+
+/*Social network div class style*/
+#socialNetwork {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*social network body style*/
+.ui-corner-all .ui-body {
+    padding-top: 0;
+    margin-top: 0;
+    -webkit-border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/*social network body style*/
+.ui-corner-all .ui-bar {
+    padding-top: 0;
+    margin-top: 0;
+    -webkit-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;
+}
+/*+++++++++++++++++++++++++++++End of Social network icon section+++++++++++++++++++++++++++*/
+
+/*About me page my image style*/
+#myImage {
+    height: auto;
+    width: 100%;
+}
+
+/*project page thumbnail image style*/
+.has-special-thumb li a {
+    padding-left: 50% !important;
+}
+
+.thumbContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    /*border: dashed;*/
+}
+
+    .thumbContainer img {
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+/*+++++++++++++++++++++++++++++++++++++++++++Footer section+++++++++++++++++++++++++++++++++++++++++++*/
+/*footer style*/
+footer {
+    text-align: center;
+}
+
+/*copyright style*/
+#copyRight {
+    padding-bottom: 0;
+}
+
+/*full site link style*/
+#fullSite {
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    /*border: dotted black;*/
+}
+/*+++++++++++++++++++++++++++++++++++++++++++End of Footer section+++++++++++++++++++++++++++++++++++++++++++*/

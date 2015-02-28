@@ -1,0 +1,12 @@
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.dll.config
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.dll
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.pdb
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.dll
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.pdb
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Week06\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.csprojResolveAssemblyReference.cache
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.dll.config
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.dll
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\bin\COMP308-jQueryMobile.pdb
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.dll
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.pdb
+L:\SixthSemester\COMP 308 - 063 Emerging Technologies\Assignment\Assignment2\COMP308-jQueryMobile-master\COMP308-jQueryMobile\obj\Debug\COMP308-jQueryMobile.csprojResolveAssemblyReference.cache
