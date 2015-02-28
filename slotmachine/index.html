@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<!--File  name: index.html,  Author's  name: Zhe Yan (300706310), 
+    Last modified by: Zhe Yan,  Date  last  Modified: 2015-2-26
+    Program  description: this is a slotmachine game based on createjs.
+    user can play slotmachine game with this program.
+    Revision  History: version 2.0-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhe Yan's Slot Machine</title>
+    <!-- CSS Section -->
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body onload="init();">
+    <!--The slot machine will be displayed in this canvas-->
+    <canvas id="canvas" width="750" height="500"></canvas>
+
+    <!-- JavaScript library Section -->
+    <script src="Scripts/lib/jquery.js"></script>
+    <script src="Scripts/lib/easeljs-0.8.0.min.js"></script>
+    <script src="Scripts/lib/tweenjs-0.6.0.min.js"></script>
+    <script src="Scripts/lib/soundjs-0.6.0.min.js"></script>
+    <script src="Scripts/lib/preloadjs-0.6.0.min.js"></script>
+
+    <!--game script section-->
+    <script src="Scripts/Objects/Button.js"></script>
+    <script src="Scripts/game.js"></script>
+</body>
+</html>
