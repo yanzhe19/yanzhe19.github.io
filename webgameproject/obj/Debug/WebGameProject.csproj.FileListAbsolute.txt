@@ -1,0 +1,6 @@
+G:\Github\WebGameProject\mailPilot-v11\bin\CreateJS BoilerPlate.dll.config
+G:\Github\WebGameProject\mailPilot-v11\bin\CreateJS BoilerPlate.dll
+G:\Github\WebGameProject\mailPilot-v11\bin\CreateJS BoilerPlate.pdb
+G:\Github\WebGameProject\mailPilot-v11\obj\Debug\CreateJS BoilerPlate.dll
+G:\Github\WebGameProject\mailPilot-v11\obj\Debug\CreateJS BoilerPlate.pdb
+G:\Github\WebGameProject\mailPilot-v11\obj\Debug\WebGameProject.csprojResolveAssemblyReference.cache
